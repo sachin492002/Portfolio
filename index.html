@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sachin Meena</title>
+   
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">SM</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Sachin Meena</h1>
+        <h3>I am a <span class="typing"></span></h3>
+        <p>
+          I specialize in using React and Node.js to create fast, responsive,
+          and user-friendly applications.
+        </p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/sachin-meena-9188ab200/" title="linkend"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://instagram.com/xo_sachin1?igshid=NTc4MTIwNjQ2YQ==" title="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" title="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://github.com/sachin492002" title="github"><i class='bx bxl-github'></i></a>
+        </div>
+        <a href="Resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+      <div class="image">
+        <img src="images/home4.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about.png" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="titleText"><span>A</span>bout Me</h2>
+        <div class="about-text">
+          <div class="text">
+            <h3>I'm Sachin and I'm a <span>Full-Stack Developer</span></h3>
+          </div>
+          <p>
+            I have serious passion for UI effects, animations and creating
+            intuitive, dynamic user experiences.
+          </p>
+          <p>
+            I have experience in building web applications using JavaScript,
+            React, Node.js, Express.js, MongoDB, HTML, CSS, Bootstrap, Material
+            UI, and Git.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <h2 class="titleText"><span>Recent</span> Projects</h2>
+        
+        <div class="project-container">
+            <div class="project-item">
+                <img src="images/shopper.jpg" alt="">
+                <div class="project-info">
+                    <h4>Shopper</h4>
+                    <p>Experience the ultimate online shopping destination with our MERN stack e-commerce website. Powered by MongoDB, Express.js, React, and Node.js, our platform offers a seamless and secure shopping experience. Browse a wide range of products, enjoy personalized recommendations, and conveniently make purchases with our intuitive interface. Discover the joy of e-commerce at its finest with our MERN stack e-commerce website.</p>
+                    <a href="https://github.com/sachin492002/MERN-E-commerce" class="btn1" title="Shopper"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/book.jpg" alt="">
+                <div class="project-info">
+                    <h4>Book Finder</h4>
+                    <p>Discover your next literary adventure with our Flask-based book finder app. Harnessing the power of information retrieval systems, we bring you an intuitive platform that helps you explore a vast collection of books, providing comprehensive details, recommendations, and an effortless search experience. Uncover hidden gems and immerse yourself in the world of literature like never before.</p>
+                    <a href="https://github.com/sachin492002/BookFinder" class="btn1"title="BookFinder"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/food.jpg" alt="">
+                <div class="project-info">
+                    <h4>SWagger</h4>
+                    <p>Introducing a MERN-powered food delivery app, seamlessly connecting hungry customers with a wide array of delicious cuisines from their favorite local restaurants, all at their fingertips. Enjoy a convenient and delightful dining experience with our user-friendly interface and swift delivery service.</p>
+                    <a href="https://github.com/sachin492002/Food_Delivery_App" class="btn1"title="SWagger"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="titleText"><span>Contact</span> Me!</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Name" name="name">
+                <input type="text" placeholder="Email" name="email">
+
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Mobile Number" name="number">
+                <input type="text" placeholder="Subject" name="subject">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message" name="msg"></textarea>
+            <input type="submit" class="btn" value="Send Message">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Sachin | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home" title="Home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="./index.js"></script>
+    
+  </body>
+  
+</html>
