@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('*',(req,res)=>{
-    res.status(200).sendFile(path.join(__dirname+('/index.html')));
+    res.status(200).sendFile(path.join(__dirname+('/public/index.html')));
 })
 
 app.listen(port, () => {
