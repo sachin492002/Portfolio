@@ -5,8 +5,6 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     border: none;
-    max-width: 100%;
-    overflow-x: hidden;
     outline: none;
     text-decoration: none;
     list-style: none;
@@ -120,6 +118,8 @@ section{
 
 
 .home{
+    max-width: 100%;
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,6 +214,8 @@ span{
 }
 
 .about{
+    max-width: 100%;
+    overflow-x: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
