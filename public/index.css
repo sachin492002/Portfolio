@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     border: none;
+    max-width: 100%;
+    overflow-x: hidden;
     outline: none;
     text-decoration: none;
     list-style: none;
@@ -407,7 +409,7 @@ span{
 }
 @media (max-width:991px){
     .header{
-        padding: 3rem;
+        padding: 2rem 3%;
     }
     section{
         padding: 10rem 3% 2rem;
@@ -525,9 +527,9 @@ span{
     .contact form .input-box input{
         width: 100%;
     }
-    .projects{
+    /* .projects{
         padding: 10rem 3% 2rem;
-    }
+    } */
     .projects h2{
         font-size: 4.5rem;
     }
