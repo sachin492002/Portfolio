@@ -821,10 +821,7 @@ span{
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0.3s ease;
       }
-      .skill-list i:hover{
-        color: var(--clr-primary-10);
-        shadow: 0 0 1rem var(--clr-primary-10);
-      }
+
       .skill-list i:hover::after {
         opacity: 1;
         visibility: visible;
