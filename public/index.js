@@ -1,21 +1,55 @@
+var r = document.querySelector(':root');
+
+
+function changetheme(lite) {
+  if (getComputedStyle(r).getPropertyValue('--clr-primary-1') == 'hsl(109, 100%, 51%)'&&lite==1) { // light theme
+    r.style.setProperty('--clr-primary-1', 'hsl(180, 100%, 56%)');
+    r.style.setProperty('--clr-primary-5', 'hsl(0, 0%, 100%)');
+    r.style.setProperty('--clr-primary-10', 'hsl(180, 50%, 5%)');
+    r.style.setProperty('--clr-grey-1', 'hsl(0, 0%, 100%)');
+
+    localStorage.setItem('theme', 'light');
+  } else { // dark theme
+    r.style.setProperty('--clr-primary-1', 'hsl(109, 100%, 51%)');
+    r.style.setProperty('--clr-primary-10', 'hsl(0, 0%, 100%)');
+    r.style.setProperty('--clr-primary-5', 'hsl(180, 50%, 5%)');
+    r.style.setProperty('--clr-grey-1', 'hsl(210, 9%, 13%)');
+
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+// Check if the theme is stored in local storage
+if (localStorage.getItem('theme') === 'light') {
+  changetheme(lite=1);
+} else if (localStorage.getItem('theme') === 'dark') {
+  changetheme(lite=0);
+}
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
   var links = document.querySelectorAll('.navbar a');
   var menuIcon = document.querySelector('#menu-icon');
   var navbar = document.querySelector('.navbar');
+  var theme = document.querySelector('#theme')
   links.forEach(function (link) {
     link.addEventListener('click', function () {
       links.forEach(function (link) {
         link.classList.remove('active');
       });
-
+      
       this.classList.add('active');
     });
   });
+
   menuIcon.addEventListener('click', function () {
-    console.log('hi there');
     menuIcon.classList.toggle('bx-menu');
     menuIcon.classList.toggle('bxl-xing');
     navbar.classList.toggle('active');
+  });
+  theme.addEventListener('click',function(){
+    changetheme(lite=1);
   });
 });
 
