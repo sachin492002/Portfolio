@@ -6,7 +6,7 @@ const logo = document.getElementById('logo');
 function changetheme(lite) {
   if (getComputedStyle(r).getPropertyValue('--clr-primary-1') == 'hsl(109, 100%, 51%)'&&lite==1) { // light theme
     r.style.setProperty('--clr-primary-1', 'hsl(187, 83%, 41%)');
-    r.style.setProperty('--clr-primary-5', 'hsl(0, 0%, 100%)');
+    r.style.setProperty('--clr-primary-5', '#f2ebe9');
     r.style.setProperty('--clr-primary-10', 'hsl(180, 50%, 5%)');
     r.style.setProperty('--clr-grey-1', 'hsl(0, 0%, 100%)');
     about_image.src = "images/about-light.png";

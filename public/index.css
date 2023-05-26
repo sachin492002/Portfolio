@@ -22,6 +22,7 @@
     --clr-primary-10:hsl(0, 0%, 100%);
     /* darkest grey - used for headings */
     --clr-grey-1:hsl(210, 9%, 13%);
+    --clr-white-1:hsl(180, 26%, 83%);
     --transition: all 0.3s linear;
     --spacing: 0.1rem;
     --radius: 0.25rem;
@@ -59,7 +60,7 @@ body{
     border-bottom: .1rem solid rgba(0,0,0,.2);
 }
 
-.logo{
+/* .logo{
     font-size: 3rem;
     font-weight: 700;
     color: var(--clr-primary-10);
@@ -67,7 +68,7 @@ body{
     letter-spacing: var(--spacing);
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-}
+} */
 .navbar a{
     font-size: 2rem;
     font-weight: 500;
@@ -336,7 +337,7 @@ span{
     border-radius: 4rem;
     transition: var(--transition);
     cursor: pointer;
-    box-shadow: 0 0 1rem var(--clr-primary-1);
+    /* box-shadow: 0 0 1rem var(--clr-primary-1); */
 }
 
 .btn:hover{
@@ -458,7 +459,7 @@ span{
   box-sizing: border-box;
 }
 .container .box .content h2 {
-  color: var(--clr-primary-10);
+  color: var(--clr-white-1);
   transition: 0.5s;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -470,7 +471,7 @@ span{
   transform: translateY(0px);
 }
 .container .box .content p {
-  color: var(--clr-primary-10);
+  color: var(--clr-white-1);
   transition: 0.5s;
   font-size: 1.3rem;
   transform: translateY(50vh);
@@ -690,8 +691,8 @@ span{
     }
 }
 .logo{
-  width: 10vw;
-  height: 8vh;
+  width: 7rem;
+  height: 4rem;
 }
 
 @media (max-width:768px){
