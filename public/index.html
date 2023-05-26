@@ -15,7 +15,8 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">SM</a>
+      <!-- <a href="#" class="logo">SM</a> -->
+      <img src="images/logo2.png"  class="logo" id="logo" alt=""/>
       <i class="bx bx-menu" id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
@@ -25,7 +26,7 @@
         <a href="#contact">Contact Me</a>
       </nav>
     </header>
-    <i class='theme-icon bx bx-sun'  id="theme"></i>
+    <i class='bx bxs-sun'  id="theme"></i>
     <section class="home" id="home">
       <div class="home-content">
         <h3>Hello, I'm</h3>
@@ -44,13 +45,13 @@
         <a href="Resume.pdf" class="btn" download>Download Resume</a>
       </div>
       <div class="image">
-        <img src="images/home4.png" alt=""/>
+        <img src="images/home4.png" alt="" id="homeimg"/>
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="about-img">
-        <img src="images/about.png" alt="" class="dark active"  />
+        <img src="images/about.png" alt="" id="aboutimg"/>
       </div>
       <div class="about-content">
         <h2 class="titleText"><span>A</span>bout Me</h2>
@@ -117,35 +118,54 @@
     </section>
     <section class="projects" id="projects">
         <h2 class="titleText"><span>Recent</span> Projects</h2>
-        
-        <div class="project-container">
-            <div class="project-item">
-                <img src="images/shopper.jpg" alt="">
-                <div class="project-info">
-                    <h4>Shopper</h4>
-                    <p>Experience the ultimate online shopping destination with our MERN stack e-commerce website. Powered by MongoDB, Express.js, React, and Node.js, our platform offers a seamless and secure shopping experience. Browse a wide range of products, enjoy personalized recommendations, and conveniently make purchases with our intuitive interface. Discover the joy of e-commerce at its finest with our MERN stack e-commerce website.</p>
-                    <a href="https://github.com/sachin492002/MERN-E-commerce" class="btn1" title="Shopper"><i class='bx bx-link-external'></i></a>
-                </div>
+        <div class="container">
+          <div class="box">
+            <div class="imgBx">
+              <img src="images/shopper.jpg" alt="">
             </div>
-            <div class="project-item">
-                <img src="images/book.jpg" alt="">
-                <div class="project-info">
-                    <h4>Book Finder</h4>
-                    <p>Discover your next literary adventure with our Flask-based book finder app. Harnessing the power of information retrieval systems, we bring you an intuitive platform that helps you explore a vast collection of books, providing comprehensive details, recommendations, and an effortless search experience. Uncover hidden gems and immerse yourself in the world of literature like never before.</p>
-                    <a href="https://github.com/sachin492002/BookFinder" class="btn1"title="BookFinder"><i class='bx bx-link-external'></i></a>
-                </div>
+            <div class="content">
+              <div>
+                
+                <h2>Shopper</h2>
+                <p>Experience the ultimate online shopping destination with our MERN stack e-commerce website. Powered by MongoDB, Express.js, React, and Node.js, our platform offers a seamless and secure shopping experience. Browse a wide range of products, enjoy personalized recommendations, and conveniently make purchases with our intuitive interface. Discover the joy of e-commerce at its finest with our MERN stack e-commerce website.
+                </p>
+                <a href="https://github.com/sachin492002/MERN-E-commerce" class="btn1" title="Shopper"><i class='bx bx-link-external'></i></a>
+              </div>
             </div>
-            <div class="project-item">
-                <img src="images/food.jpg" alt="">
-                <div class="project-info">
-                    <h4>SWagger</h4>
-                    <p>Introducing a MERN-powered food delivery app, seamlessly connecting hungry customers with a wide array of delicious cuisines from their favorite local restaurants, all at their fingertips. Enjoy a convenient and delightful dining experience with our user-friendly interface and swift delivery service.</p>
-                    <a href="https://github.com/sachin492002/Food_Delivery_App" class="btn1"title="SWagger"><i class='bx bx-link-external'></i></a>
-                </div>
+          </div>
+          <div class="box">
+            <div class="imgBx">
+              <img src="images/book.jpg" alt="">
             </div>
-        </div>
-    </section>
+            <div class="content">
+              <div>
+                
+                <h2>Book Finder</h2>
+                <p>Discover your next literary adventure with our Flask-based book finder app. Harnessing the power of information retrieval systems, we bring you an intuitive platform that helps you explore a vast collection of books, providing comprehensive details, recommendations, and an effortless search experience. Uncover hidden gems and immerse yourself in the world of literature like never before.
 
+                </p>
+                <a href="https://github.com/sachin492002/BookFinder" class="btn1"title="BookFinder"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBx">
+              <img src="images/food.jpg" alt="">
+            </div>
+            <div class="content">
+              <div>
+                <h2>SWagger</h2>
+                            <p>Introducing a MERN-powered food delivery app, seamlessly connecting hungry customers with a wide array of delicious cuisines from their favorite local restaurants, all at their fingertips. Enjoy a convenient and delightful dining experience with our user-friendly interface and swift delivery service.</p>
+                            <a href="https://github.com/sachin492002/Food_Delivery_App" class="btn1"title="SWagger"><i class='bx bx-link-external'></i></a>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+
+    </section>
+    
     <section class="contact" id="contact">
         <h2 class="titleText"><span>Contact</span> Me!</h2>
         <form action="#">
